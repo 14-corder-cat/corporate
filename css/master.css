@@ -80,3 +80,13 @@ nav {
   font-weight: bold;
   font-family: 'timeburner_regular';
 }
+
+/* メインビジュアル */
+.main-visual {
+    height: 100vh;
+    background: url(../images/main_visual.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
