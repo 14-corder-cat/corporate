@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.6;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +54,9 @@ a {
 @font-face {
  font-family: 'timeburner_regular';
  src: url('timeburner_regular.ttf') format('truetype');
+}
+img {
+    max-width: 100%;
 }
 
 /* ヘッダー */
@@ -83,10 +86,62 @@ nav {
 
 /* メインビジュアル */
 .main-visual {
-    height: 100vh;
-    background: url(../images/main_visual.jpg) no-repeat;
+  height: 100vh;
+  background: url(../images/main_visual.jpg) no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* メインコンテンツ */
+.section-inner {
+    padding: 90px 10px 110px;
+}
+.section-inner  h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'timeburner_regular';
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.vision p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service {
+    background: url(../images/bg_service.jpg);
     background-size: 100%;
+}
+.service h2 {
+    color: #fff;
+}
+.service .section-inner {
+    padding: 45px 10px 30px;
+}
+.card-wrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    justify-content: space-between;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.card {
+    width: calc(33.3% - 20px);
+    background: #fff;
+}
+.card figure {
+    position: relative;
+    text-align: center;
+}
+.card figcaption {
+    position: absolute;
+    bottom: 8px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+}
+.card-text {
+    padding: 10px 15px;
+}
